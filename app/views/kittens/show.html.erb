@@ -1,0 +1,10 @@
+<p>Kitten number <%= @kitten.id %>:</p>
+<p>Name: <%= @kitten.name.capitalize %></p>
+<p>Age: <%= @kitten.age %></p>
+<p>Cuteness Level: <%= @kitten.cuteness %></p>
+<p>Softness Level: <%= @kitten.softness %></p>
+<%= link_to 'Delete', kitten_path(@kitten), data: { 
+              turbo_method: :delete,
+              turbo_confirm: 'Are you sure?'
+            } %>
+<%= link_to 'Index', root_path %>

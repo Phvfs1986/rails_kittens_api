@@ -1,0 +1,6 @@
+<h1>Kitten List</h1>
+<% @kittens.each do |kitten| %>
+  <%= link_to kitten.name.capitalize, kitten %>
+<% end %><br><br>
+
+<%= link_to 'Create Kitten', new_kitten_path %>
